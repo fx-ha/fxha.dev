@@ -89,10 +89,14 @@ const Index = () => {
       <Flex mt={4} justifyContent="center" alignItems="center">
         <Stack direction={{ base: 'column', sm: 'row' }}>
           <Flex alignItems="center">
-            <VStack>
-              <Text mb={3}>
-                In 2021, I worked for SideShift.ai as a Backend Engineer.
-                Sideshift is a no-sign-up cryptocurrency exchange.
+            <VStack align="left" spacing={6}>
+              <Text>
+                In 2021 I worked for{' '}
+                <Link isExternal href="https://sideshift.ai/a/discount">
+                  SideShift.ai
+                </Link>{' '}
+                as a Backend Engineer. Sideshift is a no-sign-up cryptocurrency
+                exchange.
               </Text>
               <Text>
                 My tasks involved implementing new features, automating
