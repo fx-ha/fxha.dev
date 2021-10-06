@@ -10,7 +10,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/icon/favicon.ico" />
         <meta name="og:title" content="Felix Ha" />
         <title>Felix Ha</title>
       </Head>
