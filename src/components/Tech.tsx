@@ -1,14 +1,14 @@
-import { Heading, Flex, Text } from '@chakra-ui/react'
+import { Box, Heading, Flex, Text } from '@chakra-ui/react'
 import { TechButton } from '.'
 
 const Tech = () => (
-  <section>
-    <Heading as="h2" size="lg" mt={12}>
+  <Box as="section" mt={16}>
+    <Heading as="h2" size="lg">
       Tech
     </Heading>
 
     <Text mt={4} textAlign="center">
-      Current tech that I&#39;m interested in and that I use on a regular basis:
+      Current tech I&#39;m interested in and that I use on a regular basis:
     </Text>
 
     <Flex mt={2} wrap="wrap" justifyContent="center">
@@ -50,10 +50,10 @@ const Tech = () => (
       <TechButton text="LND" href="https://docs.lightning.engineering/" />
       <TechButton text="Three.js" href="https://threejs.org/" />
       <TechButton text="Rust" href="https://www.rust-lang.org/" />
-      <TechButton text="Go" href="https://golang.org/" />
+      <TechButton text="Golang" href="https://golang.org/" />
       <TechButton text="Elixir" href="https://elixir-lang.org/" />
     </Flex>
-  </section>
+  </Box>
 )
 
 export default Tech
