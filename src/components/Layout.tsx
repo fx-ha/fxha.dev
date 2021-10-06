@@ -23,9 +23,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         color={color[colorMode]}
         minHeight="100vh"
       >
-        <Container as="main" maxW="3xl">
+        <Container maxW="3xl">
           <Navigation />
-          {children}
+          <main>{children}</main>
         </Container>
       </Flex>
     </>
