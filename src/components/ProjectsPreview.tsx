@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import NextLink from 'next/link'
 import {
-  Button,
   Box,
+  Button,
   Heading,
   Flex,
   Link,
@@ -17,8 +17,8 @@ const ProjectsPreview = () => {
   const isDark = colorMode === 'dark'
 
   return (
-    <section>
-      <Heading as="h2" size="lg" mt={12}>
+    <Box as="section" mt={16}>
+      <Heading as="h2" size="lg">
         Projects
       </Heading>
 
@@ -68,10 +68,12 @@ const ProjectsPreview = () => {
 
       <Flex mt={4} justifyContent="center">
         <NextLink href="/projects" passHref>
-          <Button>More</Button>
+          <Link _hover={{ textDecoration: 'none' }}>
+            <Button>More</Button>
+          </Link>
         </NextLink>
       </Flex>
-    </section>
+    </Box>
   )
 }
 
