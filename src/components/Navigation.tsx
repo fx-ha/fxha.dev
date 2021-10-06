@@ -15,7 +15,7 @@ const Navigation = () => {
   const isDark = colorMode === 'dark'
 
   return (
-    <Flex alignItems="center" my={6}>
+    <Flex as="nav" alignItems="center" my={6}>
       <NextLink href="/">
         <Icon
           cursor="pointer"
