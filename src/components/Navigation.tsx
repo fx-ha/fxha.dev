@@ -9,6 +9,7 @@ import {
   useColorMode,
 } from '@chakra-ui/react'
 import { BiMoon, BiSun } from 'react-icons/bi'
+import { ActiveLink } from '.'
 
 const Navigation = () => {
   const { colorMode, toggleColorMode } = useColorMode()
@@ -40,13 +41,9 @@ const Navigation = () => {
       <Spacer />
 
       <HStack spacing={3}>
-        <NextLink href="/projects" passHref>
-          <Link>Projects</Link>
-        </NextLink>
+        <ActiveLink href="/projects">Projects</ActiveLink>
         <Text>|</Text>
-        <NextLink href="/contact" passHref>
-          <Link>Contact</Link>
-        </NextLink>
+        <ActiveLink href="/contact">Contact</ActiveLink>
         <Text>|</Text>
         <Icon
           as={isDark ? BiSun : BiMoon}

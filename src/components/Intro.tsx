@@ -13,14 +13,10 @@ const Intro = () => (
         </Text>
 
         <Text>
-          Before focusing on the web, I studied game development at the
-          University of Bayreuth. Since then, I worked for an agency where I had
-          the opportunity to build a variety of sites involving e-commerce,
-          content management and responsive design.
-        </Text>
-
-        <Text>
-          In 2021 I started creating my own projects as well as freelancing for
+          After studying media at the University of Bayreuth, I worked for an
+          agency where I had the opportunity to build a variety of websites
+          involving e-commerce, content management and responsive design. In
+          2021, I started creating my own projects as well as freelancing for
           clients. Among them are various artists and a cryptocurrency exchange.
           See more on my{' '}
           <NextLink href="/projects" passHref>
