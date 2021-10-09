@@ -2,10 +2,10 @@ import { Button, Link } from '@chakra-ui/react'
 
 type TechButtonProps = {
   href: string
-  text: string
+  children: React.ReactNode
 }
 
-const TechButton = ({ href, text }: TechButtonProps) => {
+const TechButton = ({ href, children }: TechButtonProps) => {
   return (
     <Link
       href={href}
@@ -14,7 +14,7 @@ const TechButton = ({ href, text }: TechButtonProps) => {
       mb={2}
       _hover={{ textDecoration: 'none' }}
     >
-      <Button size="sm">{text}</Button>
+      <Button size="sm">{children}</Button>
     </Link>
   )
 }

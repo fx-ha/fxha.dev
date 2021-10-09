@@ -8,22 +8,22 @@ const Tech = () => (
     </Heading>
 
     <Text mt={4} textAlign="center">
-      Current tech I&#39;m interested in and that I use on a regular basis:
+      Current tech I&#39;m interested in and that I use regularly:
     </Text>
 
     <Flex mt={2} wrap="wrap" justifyContent="center">
-      <TechButton text="Typescript" href="https://www.typescriptlang.org/" />
-      <TechButton text="NodeJS" href="https://nodejs.org/" />
-      <TechButton text="PostgreSQL" href="https://www.postgresql.org/" />
-      <TechButton text="GraphQL" href="https://graphql.org/" />
-      <TechButton text="ReactJS" href="https://reactjs.org/" />
-      <TechButton text="NextJS" href="https://nextjs.org/" />
-      <TechButton text="Jest" href="https://jestjs.io/" />
-      <TechButton text="Chakra UI" href="https://chakra-ui.com/" />
-      <TechButton text="Linux" href="https://www.linux.org/" />
-      <TechButton text="Docker" href="https://www.docker.com/" />
-      <TechButton text="Nginx" href="https://www.nginx.com/" />
-      <TechButton text="Bitcoin" href="https://bitcoin.org/" />
+      <TechButton href="https://www.typescriptlang.org/">Typescript</TechButton>
+      <TechButton href="https://nodejs.org/">NodeJS</TechButton>
+      <TechButton href="https://www.postgresql.org/">PostgreSQL</TechButton>
+      <TechButton href="https://graphql.org/">GraphQL</TechButton>
+      <TechButton href="https://reactjs.org/">ReactJS</TechButton>
+      <TechButton href="https://nextjs.org/">NextJS</TechButton>
+      <TechButton href="https://jestjs.io/">Jest</TechButton>
+      <TechButton href="https://chakra-ui.com/">Chakra UI</TechButton>
+      <TechButton href="https://www.linux.org/">Linux</TechButton>
+      <TechButton href="https://www.docker.com/">Docker</TechButton>
+      <TechButton href="https://www.nginx.com/">Nginx</TechButton>
+      <TechButton href="https://bitcoin.org/">Bitcoin</TechButton>
     </Flex>
 
     <Text mt={6} textAlign="center">
@@ -31,14 +31,15 @@ const Tech = () => (
     </Text>
 
     <Flex mt={2} wrap="wrap" justifyContent="center">
-      <TechButton text="Unity 3D" href="/" />
-      <TechButton text="Django" href="https://www.djangoproject.com/" />
-      <TechButton text="FastAPI" href="https://fastapi.tiangolo.com/" />
-      <TechButton text="Laravel" href="https://laravel.com/" />
-      <TechButton text="VueJS" href="https://vuejs.org/" />
-      <TechButton text="Bootstrap" href="https://getbootstrap.com/" />
-      <TechButton text="Chromatic" href="https://www.chromatic.com/" />
-      <TechButton text="Puppeteer" href="https://pptr.dev/" />
+      <TechButton href="/">Unity 3D</TechButton>
+      <TechButton href="https://www.djangoproject.com/">Django</TechButton>
+      <TechButton href="https://fastapi.tiangolo.com/">FastAPI</TechButton>
+      <TechButton href="https://laravel.com/">Laravel</TechButton>
+      <TechButton href="https://vuejs.org/">VueJS</TechButton>
+      <TechButton href="https://getbootstrap.com/">Bootstrap</TechButton>
+      <TechButton href="https://www.cypress.io/">Cypress</TechButton>
+      <TechButton href="https://www.chromatic.com/">Chromatic</TechButton>
+      <TechButton href="https://pptr.dev/">Puppeteer</TechButton>
     </Flex>
 
     <Text mt={6} textAlign="center">
@@ -46,12 +47,12 @@ const Tech = () => (
     </Text>
 
     <Flex mt={2} wrap="wrap" justifyContent="center">
-      <TechButton text="React Native" href="https://reactnative.dev/" />
-      <TechButton text="LND" href="https://docs.lightning.engineering/" />
-      <TechButton text="Three.js" href="https://threejs.org/" />
-      <TechButton text="Rust" href="https://www.rust-lang.org/" />
-      <TechButton text="Golang" href="https://golang.org/" />
-      <TechButton text="Elixir" href="https://elixir-lang.org/" />
+      <TechButton href="https://reactnative.dev/">React Native</TechButton>
+      <TechButton href="https://docs.lightning.engineering/">LND</TechButton>
+      <TechButton href="https://threejs.org/">Three.js</TechButton>
+      <TechButton href="https://www.rust-lang.org/">Rust</TechButton>
+      <TechButton href="https://golang.org/">Golang</TechButton>
+      <TechButton href="https://elixir-lang.org/">Elixir</TechButton>
     </Flex>
   </Box>
 )

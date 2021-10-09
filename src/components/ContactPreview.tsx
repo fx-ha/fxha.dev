@@ -16,7 +16,7 @@ const ContactPreview = () => (
       Contact
     </Heading>
 
-    <Text mt={4} textAlign="center">
+    <Text mt={6} textAlign="center">
       If you want to know more about my projects or have an interesting offer,
       you can reach me here:
     </Text>

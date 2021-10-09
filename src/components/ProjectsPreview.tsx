@@ -27,7 +27,7 @@ const ProjectsPreview = () => {
           <Flex alignItems="center">
             <VStack align="left" spacing={6}>
               <Text>
-                In 2021 I worked for{' '}
+                In 2021, I worked for{' '}
                 <Link isExternal href="https://sideshift.ai/a/discount">
                   SideShift.ai
                 </Link>{' '}
@@ -35,8 +35,8 @@ const ProjectsPreview = () => {
                 exchange.
               </Text>
               <Text>
-                My tasks involved implementing new features, automating
-                processes, building admin interfaces, and fixing bugs.
+                My tasks included automating processes, implementing new
+                features, building admin interfaces, and fixing bugs.
               </Text>
               <Text>
                 Tech: Typescript, React, PostgreSQL, GraphQL, Redis, Storybook,
@@ -45,12 +45,8 @@ const ProjectsPreview = () => {
             </VStack>
           </Flex>
 
-          <Box maxW={{ base: '100%', sm: '50%' }}>
-            <Link
-              mt={{ base: 3, sm: 0 }}
-              isExternal
-              href="https://sideshift.ai/a/discount"
-            >
+          <Box mt={{ base: 4, sm: 0 }} maxW={{ base: '100%', sm: '50%' }}>
+            <Link isExternal href="https://sideshift.ai/a/discount">
               <Image
                 src={
                   isDark
