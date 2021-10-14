@@ -1,6 +1,6 @@
 My personal website
 
-## Tools
+## Built with
 - Chakra UI
 - Next.js
 - React
