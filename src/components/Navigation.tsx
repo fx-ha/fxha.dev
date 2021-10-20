@@ -1,22 +1,55 @@
 import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import {
   Flex,
   HStack,
   Icon,
   Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
   Spacer,
   Text,
   useColorMode,
 } from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
 import { BiMoon, BiSun } from 'react-icons/bi'
 import { ActiveLink } from '.'
+import { useLang } from '../utils'
+
+const navigationContent = {
+  en: {
+    projects: 'Projects',
+    contact: 'Contact',
+    blog: 'Blog',
+  },
+  de: {
+    projects: 'Projekte',
+    contact: 'Kontakt',
+    blog: 'Blog',
+  },
+}
 
 const Navigation = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   const isDark = colorMode === 'dark'
 
+  const router = useRouter()
+  const { pathname, asPath, query, locale } = router
+  const isEnglish = locale === 'en'
+
+  const toggleLanguage = () => {
+    router.push({ pathname, query }, asPath, {
+      locale: isEnglish ? 'de' : 'en',
+    })
+  }
+
+  const lang = useLang()
+  const { projects, contact, blog } = navigationContent[lang]
+
   return (
-    <Flex as="nav" alignItems="center" my={6}>
+    <Flex as="nav" alignItems="center" mt={{ base: '5', sm: '16' }} mb="16">
       <NextLink href="/" passHref>
         <Link>
           <Icon
@@ -41,16 +74,31 @@ const Navigation = () => {
       <Spacer />
 
       <HStack spacing={3}>
-        <ActiveLink href="/projects">Projects</ActiveLink>
+        <ActiveLink href="/projects">{projects}</ActiveLink>
         <Text>|</Text>
-        <ActiveLink href="/contact">Contact</ActiveLink>
+        <ActiveLink href="/contact">{contact}</ActiveLink>
         <Text>|</Text>
-        <Icon
-          as={isDark ? BiSun : BiMoon}
-          onClick={toggleColorMode}
-          cursor="pointer"
-          boxSize={5}
-        />
+        <ActiveLink href="/blog">{blog}</ActiveLink>
+        <Text>|</Text>
+        <Menu>
+          <MenuButton>
+            <Icon
+              as={HamburgerIcon}
+              aria-label="Options"
+              cursor="pointer"
+              boxSize={4}
+              mb={0.5}
+            />
+          </MenuButton>
+          <MenuList>
+            <MenuItem onClick={toggleLanguage}>
+              {isEnglish ? 'German' : 'English'}
+            </MenuItem>
+            <MenuItem onClick={toggleColorMode}>
+              <Icon as={isDark ? BiSun : BiMoon} cursor="pointer" boxSize={5} />
+            </MenuItem>
+          </MenuList>
+        </Menu>
       </HStack>
     </Flex>
   )

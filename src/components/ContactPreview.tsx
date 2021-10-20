@@ -9,46 +9,62 @@ import {
 } from '@chakra-ui/react'
 import { FaGithub, FaTelegramPlane } from 'react-icons/fa'
 import { BiMailSend } from 'react-icons/bi'
+import { useLang } from '../utils'
 
-const ContactPreview = () => (
-  <Box as="section" mt={16} mb={10}>
-    <Heading as="h2" size="lg">
-      Contact
-    </Heading>
+const contactContent = {
+  en: {
+    heading: 'Contact',
+    p1: 'If you want to know more about my projects or have an interesting offer, you can reach me here:',
+  },
+  de: {
+    heading: 'Kontakt',
+    p1: 'Wenn Du mehr über meine Projekte erfahren möchtest oder ein interessantes Angebot hast, kannst Du mich hier erreichen:',
+  },
+}
 
-    <Text mt={6} textAlign="center">
-      If you want to know more about my projects or have an interesting offer,
-      you can reach me here:
-    </Text>
+const ContactPreview = () => {
+  const lang = useLang()
+  const { heading, p1 } = contactContent[lang]
 
-    <Flex mt={3} alignItems="center" justifyContent="center">
-      <HStack spacing={50}>
-        <Link href="mailto:felix@fxha.dev" isExternal>
-          <IconButton
-            size="lg"
-            icon={<BiMailSend size={35} />}
-            aria-label="send felix an email"
-          />
-        </Link>
+  return (
+    <Box as="section" mb="16">
+      <Heading as="h2" size="lg">
+        {heading}
+      </Heading>
 
-        <Link href="https://github.com/fx-ha" isExternal>
-          <IconButton
-            size="lg"
-            icon={<FaGithub size={30} />}
-            aria-label="felix on github"
-          />
-        </Link>
+      <Text mt="8" textAlign="center">
+        {p1}
+      </Text>
 
-        <Link href="https://t.me/felixha" isExternal>
-          <IconButton
-            size="lg"
-            icon={<FaTelegramPlane size={30} />}
-            aria-label="felix on telegram"
-          />
-        </Link>
-      </HStack>
-    </Flex>
-  </Box>
-)
+      <Flex mt="5" alignItems="center" justifyContent="center">
+        <HStack spacing={50}>
+          <Link href="mailto:felix@fxha.dev" isExternal>
+            <IconButton
+              size="lg"
+              icon={<BiMailSend size={35} />}
+              aria-label="send felix an email"
+            />
+          </Link>
+
+          <Link href="https://github.com/fx-ha" isExternal>
+            <IconButton
+              size="lg"
+              icon={<FaGithub size={30} />}
+              aria-label="felix on github"
+            />
+          </Link>
+
+          <Link href="https://t.me/felixha" isExternal>
+            <IconButton
+              size="lg"
+              icon={<FaTelegramPlane size={30} />}
+              aria-label="felix on telegram"
+            />
+          </Link>
+        </HStack>
+      </Flex>
+    </Box>
+  )
+}
 
 export default ContactPreview
