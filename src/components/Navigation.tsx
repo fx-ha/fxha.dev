@@ -23,11 +23,13 @@ const navigationContent = {
     projects: 'Projects',
     contact: 'Contact',
     blog: 'Blog',
+    language: 'German',
   },
   de: {
     projects: 'Projekte',
     contact: 'Kontakt',
     blog: 'Blog',
+    language: 'Englisch',
   },
 }
 
@@ -46,7 +48,7 @@ const Navigation = () => {
   }
 
   const lang = useLang()
-  const { projects, contact, blog } = navigationContent[lang]
+  const { projects, contact, blog, language } = navigationContent[lang]
 
   return (
     <Flex as="nav" alignItems="center" mt={{ base: '5', sm: '16' }} mb="16">
@@ -91,9 +93,7 @@ const Navigation = () => {
             />
           </MenuButton>
           <MenuList>
-            <MenuItem onClick={toggleLanguage}>
-              {isEnglish ? 'German' : 'English'}
-            </MenuItem>
+            <MenuItem onClick={toggleLanguage}>{language}</MenuItem>
             <MenuItem onClick={toggleColorMode}>
               <Icon as={isDark ? BiSun : BiMoon} cursor="pointer" boxSize={5} />
             </MenuItem>

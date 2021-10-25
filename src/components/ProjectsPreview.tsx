@@ -19,12 +19,14 @@ const projectsContent = {
     p11: 'In 2021, I worked for',
     p12: 'as a Backend Engineer. Sideshift is a strongly automated cryptocurrency exchange that serves as a bridge between different blockchains.',
     p2: 'My tasks included improving automation, adding new features, extending the API, building admin interfaces, and fixing bugs.',
+    button: 'More',
   },
   de: {
     heading: 'Projekte',
     p11: '2021 habe ich für',
     p12: 'als Backend-Entwickler gearbeitet. Sideshift ist eine stark automatisierte Tauschbörse für Kryptowährungen, die als Brücke zwischen verschiedenen Blockchains dient.',
     p2: 'Meine Aufgabe war, Prozesse zu automatisieren, neue Funktionen zu implementieren, das API zu erweitern, grafische Oberflächen für Administratoren zu bauen und Fehler zu beheben.',
+    button: 'Mehr',
   },
 }
 
@@ -33,7 +35,7 @@ const ProjectsPreview = () => {
   const isDark = colorMode === 'dark'
 
   const lang = useLang()
-  const { heading, p11, p12, p2 } = projectsContent[lang]
+  const { heading, p11, p12, p2, button } = projectsContent[lang]
 
   return (
     <Box as="section" mb="24">
@@ -80,7 +82,7 @@ const ProjectsPreview = () => {
       <Flex mt="6" justifyContent="center">
         <NextLink href="/projects" passHref>
           <Link _hover={{ textDecoration: 'none' }}>
-            <Button>More</Button>
+            <Button>{button}</Button>
           </Link>
         </NextLink>
       </Flex>
