@@ -13,7 +13,7 @@ import {
   Text,
   useColorMode,
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { SettingsIcon } from '@chakra-ui/icons'
 import { BiMoon, BiSun } from 'react-icons/bi'
 import { ActiveLink } from '.'
 import { useLang } from '../utils'
@@ -85,7 +85,7 @@ const Navigation = () => {
         <Menu>
           <MenuButton>
             <Icon
-              as={HamburgerIcon}
+              as={SettingsIcon}
               aria-label="Options"
               cursor="pointer"
               boxSize={4}

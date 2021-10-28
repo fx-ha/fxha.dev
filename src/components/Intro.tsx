@@ -12,8 +12,8 @@ const introContent = {
   },
   de: {
     heading: 'Hi! Ich bin Felix.',
-    p1: 'Ich bin ein Full-stack-Entwickler aus Deutschland und lebe gerade in Lissabon. Ich arbeite gerne mit Typescript und React.',
-    p2: 'Nach einem Medienstudium habe ich für eine Werbeagentur gearbeitet, wo ich die Möglichkeit hatte, mich an einer Reihe von Projekten auszuprobieren. Wir bauten Webseiten mit E-Commerce-Funktionen und passten Content-Management-Systeme an Kundenwünsche an. Alles im Responsive Design. 2021 begann ich, eigene Projekte zu entwerfen und selbstständig für Kunden zu arbeiten. Dazu zählen mehrere Künstlerprojekte und eine Tauschbörse für Kryptowährungen. Mehr dazu auf meiner',
+    p1: 'Ich bin ein Full-stack-Entwickler aus Deutschland und lebe in Lissabon. Ich arbeite bevorzugt mit Typescript und React.',
+    p2: 'Nach einem Medienstudium arbeitete ich für eine Werbeagentur, wo ich die Möglichkeit hatte, bei unterschiedlichen Projekten mitzuwirken. Wir bauten Webseiten mit E-Commerce-Funktionen und passten Content-Management-Systeme an Kundenwünsche an. Alles im Responsive Design. 2021 begann ich, eigene Projekte zu entwerfen und selbstständig für Kunden zu arbeiten. Dazu zählen mehrere Künstlerprojekte und eine Tauschbörse für Kryptowährungen. Mehr dazu auf meiner',
     projects: 'Projektseite',
     p3: 'Bei Interesse kannst Du mich erreichen unter',
   },

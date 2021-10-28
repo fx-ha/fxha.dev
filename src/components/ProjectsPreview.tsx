@@ -17,7 +17,7 @@ const projectsContent = {
   en: {
     heading: 'Projects',
     p11: 'In 2021, I worked for',
-    p12: 'as a Backend Engineer. Sideshift is a strongly automated cryptocurrency exchange that serves as a bridge between different blockchains.',
+    p12: 'as a Backend Engineer. Sideshift is a heavily automated exchange for digital currencies that serves as a bridge between different blockchains.',
     p2: 'My tasks included improving automation, adding new features, extending the API, building admin interfaces, and fixing bugs.',
     button: 'More',
   },
