@@ -12,7 +12,7 @@ const techContent = {
   de: {
     heading: 'Tech',
     p1: 'Aktuelle Technologien, die mich interessieren und die ich regelmäßig nutze:',
-    p2: 'Früher arbeitete ich gerne mit:',
+    p2: 'Davor arbeitete ich gerne mit:',
     p3: 'In Zukunft würde ich gerne lernen:',
   },
 }
