@@ -45,17 +45,21 @@ const ProjectsPreview = () => {
 
       <Flex mt="8" justifyContent="center" alignItems="center">
         <Stack direction={{ base: 'column', sm: 'row' }}>
-          <Flex alignItems="center">
+          <Flex
+            alignItems="center"
+            mr={{ base: 0, sm: '9' }}
+            mb={{ base: '4', sm: 0 }}
+          >
             <VStack align="left" spacing={6}>
-              <Text>
+              <Text textAlign="justify">
                 {p11}{' '}
                 <Link isExternal href="https://sideshift.ai/a/discount">
                   SideShift.ai
                 </Link>{' '}
                 {p12}
               </Text>
-              <Text>{p2}</Text>
-              <Text>
+              <Text textAlign="justify">{p2}</Text>
+              <Text textAlign="justify">
                 Tech: Typescript, React, PostgreSQL, GraphQL, Redis, Storybook,
                 Jest
               </Text>

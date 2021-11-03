@@ -13,7 +13,7 @@ const introContent = {
   de: {
     heading: 'Hi! Ich bin Felix.',
     p1: 'Ich bin ein Full-stack-Entwickler aus Deutschland und lebe in Lissabon. Ich arbeite bevorzugt mit Typescript und React.',
-    p2: 'Nach einem Medienstudium arbeitete ich für eine Werbeagentur, wo ich die Möglichkeit hatte, bei unterschiedlichen Projekten mitzuwirken. Wir bauten Webseiten mit E-Commerce-Funktionen und passten Content-Management-Systeme an Kundenwünsche an. Alles im Responsive Design. 2021 begann ich, eigene Projekte zu entwerfen und selbstständig für Kunden zu arbeiten. Dazu zählen mehrere Künstlerprojekte und eine Tauschbörse für Kryptowährungen. Mehr dazu auf meiner',
+    p2: 'Nach einem Medienstudium arbeitete ich für eine Werbeagentur, wo ich die Möglichkeit hatte, bei unterschiedlichen Projekten mitzuwirken. Wir bauten Webseiten mit E-Commerce-Funktionen und passten Content-Management-Systeme an Kundenwünsche an. Alles im Responsive Design. 2021 fing ich an, eigene Projekte zu entwerfen und selbstständig für Kunden zu arbeiten. Dazu zählen mehrere Künstlerprojekte und eine Tauschbörse für Kryptowährungen. Mehr dazu auf meiner',
     projects: 'Projektseite',
     p3: 'Bei Interesse kannst Du mich erreichen unter',
   },
@@ -29,18 +29,22 @@ const Intro = () => {
 
       <Flex mt="14">
         <VStack align="left" spacing={5}>
-          <Text>{p1}</Text>
+          <Text textAlign="justify">{p1}</Text>
 
-          <Text>
+          <Text textAlign="justify">
             {p2}{' '}
             <NextLink href="/projects" passHref>
-              <Link>{projects}</Link>
+              <Link textDecoration="underline">{projects}</Link>
             </NextLink>
             .
           </Text>
 
-          <Text>
-            {p3} <Link href="mailto:felix@fxha.dev">felix@fxha.dev</Link>.
+          <Text textAlign="justify">
+            {p3}{' '}
+            <Link textDecoration="underline" href="mailto:felix@fxha.dev">
+              felix@fxha.dev
+            </Link>
+            .
           </Text>
         </VStack>
       </Flex>
