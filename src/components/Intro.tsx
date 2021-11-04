@@ -34,14 +34,14 @@ const Intro = () => {
           <Text textAlign="justify">
             {p2}{' '}
             <NextLink href="/projects" passHref>
-              <Link textDecoration="underline">{projects}</Link>
+              <Link fontWeight="bold">{projects}</Link>
             </NextLink>
             .
           </Text>
 
           <Text textAlign="justify">
             {p3}{' '}
-            <Link textDecoration="underline" href="mailto:felix@fxha.dev">
+            <Link fontWeight="bold" href="mailto:felix@fxha.dev">
               felix@fxha.dev
             </Link>
             .

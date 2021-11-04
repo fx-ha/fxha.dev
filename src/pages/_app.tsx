@@ -1,7 +1,6 @@
 import { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../theme'
-// fix for jumping scrollbar
 import '../styles/global.css'
 
 function MyApp({ Component, pageProps }: AppProps) {

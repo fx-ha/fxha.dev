@@ -5,7 +5,6 @@ import {
   ProjectsPreview,
   Tech,
 } from '../components'
-import React from 'react'
 
 const Index = () => (
   <Layout>
