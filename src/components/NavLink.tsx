@@ -2,7 +2,7 @@ import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { Link } from '@chakra-ui/react'
 
-const ActiveLink = ({
+const NavLink = ({
   children,
   href,
 }: {
@@ -21,4 +21,4 @@ const ActiveLink = ({
   )
 }
 
-export default ActiveLink
+export default NavLink

@@ -15,7 +15,7 @@ import {
 } from '@chakra-ui/react'
 import { SettingsIcon } from '@chakra-ui/icons'
 import { BiMoon, BiSun } from 'react-icons/bi'
-import { ActiveLink } from '.'
+import { NavLink } from '.'
 import { useLang } from '../utils'
 
 const navigationContent = {
@@ -76,11 +76,11 @@ const Navigation = () => {
       <Spacer />
 
       <HStack spacing={3}>
-        <ActiveLink href="/projects">{projects}</ActiveLink>
+        <NavLink href="/projects">{projects}</NavLink>
         <Text>|</Text>
-        <ActiveLink href="/contact">{contact}</ActiveLink>
+        <NavLink href="/contact">{contact}</NavLink>
         <Text>|</Text>
-        <ActiveLink href="/blog">{blog}</ActiveLink>
+        <NavLink href="/blog">{blog}</NavLink>
         <Text>|</Text>
         <Menu>
           <MenuButton>

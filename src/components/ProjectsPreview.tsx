@@ -53,7 +53,11 @@ const ProjectsPreview = () => {
             <VStack align="left" spacing={6}>
               <Text textAlign="justify">
                 {p11}{' '}
-                <Link isExternal href="https://sideshift.ai/a/discount">
+                <Link
+                  isExternal
+                  href="https://sideshift.ai/a/discount"
+                  fontWeight="bold"
+                >
                   SideShift.ai
                 </Link>{' '}
                 {p12}
