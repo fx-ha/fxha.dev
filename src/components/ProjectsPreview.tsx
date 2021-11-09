@@ -71,7 +71,11 @@ const ProjectsPreview = () => {
             </VStack>
           </Flex>
 
-          <Box mt={{ base: 4, sm: 0 }} w={{ base: '100%', sm: '50%' }}>
+          <Box
+            mt={{ base: 4, sm: 0 }}
+            w={{ base: '100%', sm: '50%' }}
+            filter="drop-shadow(0.2rem 0.2rem 0.25rem rgba(0, 0, 30, 0.3))"
+          >
             <Link isExternal href="https://sideshift.ai/a/discount">
               <Image
                 title="Visit SideShift.ai"
