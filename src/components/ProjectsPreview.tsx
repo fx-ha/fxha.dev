@@ -49,6 +49,7 @@ const ProjectsPreview = () => {
             alignItems="center"
             mr={{ base: 0, sm: '9' }}
             mb={{ base: '4', sm: 0 }}
+            w={{ base: '100%', sm: '50%' }}
           >
             <VStack align="left" spacing={6}>
               <Text textAlign="justify">
@@ -70,9 +71,10 @@ const ProjectsPreview = () => {
             </VStack>
           </Flex>
 
-          <Box mt={{ base: 4, sm: 0 }} maxW={{ base: '100%', sm: '50%' }}>
+          <Box mt={{ base: 4, sm: 0 }} w={{ base: '100%', sm: '50%' }}>
             <Link isExternal href="https://sideshift.ai/a/discount">
               <Image
+                title="Visit SideShift.ai"
                 src={
                   isDark
                     ? '/images/sideshift_dark.png'

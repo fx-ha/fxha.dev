@@ -1,5 +1,5 @@
 import { Layout } from '../components'
 
-const Blog = () => <Layout>Coming soon...</Layout>
+const Blog = () => <Layout title="Blog | Felix Ha">Coming soon...</Layout>
 
 export default Blog

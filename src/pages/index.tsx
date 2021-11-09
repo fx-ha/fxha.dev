@@ -7,7 +7,7 @@ import {
 } from '../components'
 
 const Index = () => (
-  <Layout>
+  <Layout title="Felix Ha">
     <Intro />
 
     <Tech />
