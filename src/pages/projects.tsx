@@ -194,7 +194,7 @@ const Projects = () => {
         imagePath="/images/tac.png"
         p1={tac.p1}
         p2={tac.p2}
-        tech="Python, Django, PostgreSQL, Javascript, React, Next.js, Bootstrap"
+        tech="Python, Django, Wagtail CMS, PostgreSQL, React, Next.js, Bootstrap"
       />
 
       {/* <ProjectSection
@@ -214,7 +214,7 @@ const Projects = () => {
         imagePath={isDark ? '/images/wtff.png' : '/images/wtffL.png'}
         p1={whatthefiatfee.p1}
         p2={whatthefiatfee.p2}
-        tech="Javascript, Typescript, NodeJS, Express, Apollo, React, NextJS, GraphQL, PostgreSQL, Bitcoin, Chakra UI"
+        tech="Typescript, NodeJS, Express, Apollo, GraphQL, PostgreSQL, React, NextJS, Bitcoin, Chakra UI"
       />
 
       <ProjectSection
@@ -225,7 +225,7 @@ const Projects = () => {
         }
         p1={drivechainexchange.p1}
         p2={drivechainexchange.p2}
-        tech="Javascript, Typescript, NodeJS, Express, Apollo, GraphQL, PostgreSQL, React, Next.js, Bitcoin, Chakra UI"
+        tech="Typescript, NodeJS, Express, Apollo, GraphQL, PostgreSQL, React, Next.js, Bitcoin, Chakra UI"
       />
 
       <ProjectSection
