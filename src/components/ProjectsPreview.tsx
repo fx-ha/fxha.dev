@@ -24,8 +24,8 @@ const projectsContent = {
   de: {
     heading: 'Projekte',
     p11: '2021 habe ich für',
-    p12: 'als Backend-Entwickler gearbeitet. Sideshift ist eine stark automatisierte Tauschbörse für Kryptowährungen, die als Brücke zwischen verschiedenen Blockchains dient.',
-    p2: 'Meine Aufgabe war, Prozesse zu automatisieren, neue Funktionen zu implementieren, das API zu erweitern, grafische Oberflächen für Administratoren zu bauen und Fehler zu beheben.',
+    p12: 'als Backend-Entwickler gearbeitet. Sideshift ist eine stark automatisierte Tauschbörse für digitale Währungen, die als Brücke zwischen diversen Blockchains dient.',
+    p2: 'Meine Aufgabe war, Prozesse zu automatisieren, neue Funktionen zu implementieren, das API zu erweitern, grafische Oberflächen für Admins zu bauen und Fehler zu beheben.',
     button: 'Mehr',
   },
 }

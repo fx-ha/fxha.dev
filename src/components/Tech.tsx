@@ -5,13 +5,13 @@ import { useLang } from '../utils'
 const techContent = {
   en: {
     heading: 'Tech',
-    p1: "Current tech I'm interested in and that I use regularly:",
+    p1: "Current tools I'm interested in and that I use regularly:",
     p2: 'In the past, I enjoyed working with:',
     p3: "I'm especially interested in learning:",
   },
   de: {
     heading: 'Tech',
-    p1: 'Aktuelle Technologien, die mich interessieren und die ich regelmäßig nutze:',
+    p1: 'Aktuelle Tools, die mich interessieren und die ich regelmäßig nutze:',
     p2: 'Davor arbeitete ich gerne mit:',
     p3: 'In Zukunft würde ich gerne lernen:',
   },
@@ -22,16 +22,16 @@ const Tech = () => {
   const { heading, p1, p2, p3 } = techContent[lang]
 
   return (
-    <Box as="section" mb="24">
-      <Heading as="h2" size="lg">
+    <Box as="section" mb="28">
+      <Heading as="h2" mb="9" size="lg">
         {heading}
       </Heading>
 
-      <Text mt="9" textAlign="center">
+      <Text mb="4" textAlign="center">
         {p1}
       </Text>
 
-      <Flex mt="5" wrap="wrap" justifyContent="center">
+      <Flex mb="10" wrap="wrap" justifyContent="center">
         <TechButton href="https://www.typescriptlang.org/">
           Typescript
         </TechButton>
@@ -48,11 +48,11 @@ const Tech = () => {
         <TechButton href="https://bitcoin.org/">Bitcoin</TechButton>
       </Flex>
 
-      <Text mt="10" textAlign="center">
+      <Text mb="4" textAlign="center">
         {p2}
       </Text>
 
-      <Flex mt="5" wrap="wrap" justifyContent="center">
+      <Flex mb="10" wrap="wrap" justifyContent="center">
         <TechButton href="/">Unity 3D</TechButton>
         <TechButton href="https://www.djangoproject.com/">Django</TechButton>
         <TechButton href="https://fastapi.tiangolo.com/">FastAPI</TechButton>
@@ -64,11 +64,11 @@ const Tech = () => {
         <TechButton href="https://pptr.dev/">Puppeteer</TechButton>
       </Flex>
 
-      <Text mt="10" textAlign="center">
+      <Text mb="4" textAlign="center">
         {p3}
       </Text>
 
-      <Flex mt="5" wrap="wrap" justifyContent="center">
+      <Flex mb="10" wrap="wrap" justifyContent="center">
         <TechButton href="https://reactnative.dev/">React Native</TechButton>
         <TechButton href="https://docs.lightning.engineering/">LND</TechButton>
         <TechButton href="https://threejs.org/">Three.js</TechButton>
