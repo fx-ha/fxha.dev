@@ -7,7 +7,7 @@ const projectsContent = {
     heading: 'Projects',
     sideshift: {
       p1: 'Description: SideShift.ai is a heavily automated exchange for digital currencies that serves as a bridge between different blockchains.',
-      p2: 'Tasks: Improving automation, adding new features, extending the API, building admin interfaces, fixing bugs.',
+      p2: 'Tasks: Improving automation, adding new features, extending the API, building admin interfaces, fixing bugs',
     },
     haro: {
       p1: "Description: Haro.com is the e-commerce site for Germany's leading parquet manufacturer.",
