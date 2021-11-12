@@ -51,7 +51,7 @@ const Navigation = () => {
   const { projects, contact, blog, language } = navigationContent[lang]
 
   return (
-    <Flex as="nav" alignItems="center" mt={{ base: '5', sm: '16' }} mb="16">
+    <Flex as="nav" alignItems="center" mt={{ base: '5', sm: '10' }} mb="16">
       <NextLink href="/" passHref>
         <Link>
           <Icon
