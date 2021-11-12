@@ -6,7 +6,7 @@ const introContent = {
   en: {
     heading: "Hi! I'm Felix.",
     p1: "I'm a Full-stack Engineer from Germany currently living in Lisbon, Portugal. I love working with Typescript and React.",
-    p2: 'After studying media, I contributed to a variety of websites for an agency involving e-commerce, content management and responsive design. In 2021, I started creating my own projects as well as freelancing for clients. Among them are various artists and a cryptocurrency exchange. See more on my',
+    p2: 'After studying media, I contributed to a variety of websites involving e-commerce, content management and responsive design. In 2021, I started creating my own projects as well as freelancing for clients. Among them are various artists and a cryptocurrency exchange. Have a look at my',
     projects: 'projects page',
     p3: 'Feel free to contact me at',
   },
