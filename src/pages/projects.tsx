@@ -79,7 +79,7 @@ const projectsContent = {
     heading: 'Projekte',
     sideshift: {
       description:
-        'SideShift.ai ist eine stark automatisierte Tauschbörse für digitale Währungen, die als Brücke zwischen verschiedenen Blockchains dient.',
+        'SideShift.ai ist eine stark automatisierte Tauschbörse für digitale Währungen, die als Brücke zwischen diversen Blockchains dient.',
       tasks:
         'Prozesse automatisieren, API erweitern, grafische Oberflächen für Admins erstellen, Fehler beheben',
     },
@@ -115,7 +115,7 @@ const projectsContent = {
       description:
         'Hobby-Projekt zum Betatesten von Bitcoin-Software. Ermöglicht den Transfer zwischen Blockchains (Exchange) und verfolgt Blockchain-Daten (CoinNews).',
       tasks:
-        'Full-stack-Entwicklung, einrichten von Bitcoin Nodes, kostengünstiges Hosten mit VPS und Vercels CDN (Frontend)',
+        'Full-stack-Entwicklung, Einrichten von Bitcoin-Nodes, kostengünstiges Hosten mit VPS und Vercels CDN (Frontend)',
     },
     whatthefiatfee: {
       description:
