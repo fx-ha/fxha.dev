@@ -65,7 +65,7 @@ const ProjectsPreview = () => {
               </Text>
               <Text textAlign="justify">{p2}</Text>
               <Text textAlign="justify">
-                Tech: Typescript, React, PostgreSQL, GraphQL, Redis, Storybook,
+                Tools: Typescript, React, PostgreSQL, GraphQL, Redis, Storybook,
                 Jest
               </Text>
             </VStack>

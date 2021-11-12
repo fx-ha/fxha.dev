@@ -34,7 +34,7 @@ const ProjectSection = ({
           <VStack align="left" spacing={6}>
             <Text textAlign="justify">{p1}</Text>
             <Text textAlign="justify">{p2}</Text>
-            <Text textAlign="justify">Tech: {tech}</Text>
+            <Text textAlign="justify">Tools: {tech}</Text>
           </VStack>
         </Flex>
 
