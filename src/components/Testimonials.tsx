@@ -75,7 +75,7 @@ const Testimonials = () => {
 
   return (
     <Flex as="section" id="testimonials" mb="28" justifyContent="center">
-      <Flex w="full" overflow={{ base: 'hidden', sm: 'hidden' }}>
+      <Flex w="full" overflow="hidden">
         <Flex
           pos="relative"
           w="full"
@@ -91,7 +91,7 @@ const Testimonials = () => {
                 p="8"
                 bg={isDark ? 'gray.700' : 'gray.50'}
                 shadow="lg"
-                rounded={{ base: 'md', sm: 'md' }}
+                rounded="md"
                 direction={{ base: 'column-reverse', md: 'row' }}
                 alignItems="center"
                 mt="3"
@@ -106,9 +106,7 @@ const Testimonials = () => {
                 />
 
                 <Flex direction="column">
-                  <Text mb="2" fontSize="1rem">
-                    {slide.quote}
-                  </Text>
+                  <Text mb="2">{slide.quote}</Text>
 
                   <Link
                     isExternal
@@ -126,8 +124,8 @@ const Testimonials = () => {
                   <Box borderRadius="3xl" overflow="hidden" w="12" h="12">
                     <NextImage
                       src={slide.img}
-                      width={100}
-                      height={100}
+                      width={1}
+                      height={1}
                       layout="responsive"
                       alt={slide.author}
                       title={slide.author}
