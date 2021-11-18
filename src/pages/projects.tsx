@@ -19,7 +19,7 @@ const projectsContent = {
     },
     sunmarin: {
       description:
-        'Sunmarin.de is the e-commerce site for Sunmarin by Riedl, one of the leading manufacturers of swimwear & beachwear in Europe.',
+        'E-commerce site for Sunmarin by Riedl, one of the leading manufacturers of swimwear & beachwear in Europe.',
       tasks:
         'Translating mockups to HTML and CSS, ensuring compatibility for all device sizes with responsive design, adding automatic language detection, following SEO best practices',
     },

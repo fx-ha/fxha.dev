@@ -5,15 +5,15 @@ import { useLang } from '../utils'
 const introContent = {
   en: {
     heading: "Hi! I'm Felix.",
-    p1: "I'm a Full-stack Engineer from Germany currently living in Lisbon, Portugal. I love working with Typescript and React.",
-    p2: 'After studying media, I contributed to a variety of websites involving e-commerce, content management and responsive design. In 2021, I started creating my own projects as well as freelancing for clients. Among them are various artists and a cryptocurrency exchange. Have a look at my',
+    p1: "I'm a Full-stack Engineer from Germany currently living in Porto. I love working with Typescript and React.",
+    p2: "After studying media, I contributed to a variety of websites involving e-commerce, content management and responsive design. Since 2020, I've been working on my own projects as well as freelancing for clients. Among them are various artists and a cryptocurrency exchange. Have a look at my",
     projects: 'projects page',
     p3: 'Feel free to contact me at',
   },
   de: {
     heading: 'Hi! Ich bin Felix.',
-    p1: 'Ich bin ein Full-stack-Entwickler aus Deutschland und lebe in Lissabon. Ich arbeite bevorzugt mit Typescript und React.',
-    p2: 'Nach einem Medienstudium arbeitete ich für eine Werbeagentur, wo ich an mehreren Projekten mitwirkte. Wir bauten Webseiten mit E-Commerce-Funktionen und passten Content-Management-Systeme an Kundenwünsche an. Alles im Responsive Design. 2021 fing ich an, eigene Projekte zu entwerfen und selbstständig für Kunden zu arbeiten. Dazu zählen mehrere Künstlerprojekte und eine Tauschbörse für Kryptowährungen. Mehr dazu auf meiner',
+    p1: 'Ich bin ein Full-stack-Entwickler aus Deutschland und lebe in Porto. Ich arbeite bevorzugt mit Typescript und React.',
+    p2: 'Nach einem Medienstudium erstellte ich für eine Agentur Webseiten mit E-Commerce-Funktionen und passte Content-Management-Systeme an Kundenwünsche an. Alles im Responsive Design. Seit 2020 entwerfe ich eigene Projekte und arbeite selbstständig für Kunden. Dazu zählen Künstlergruppen und eine Tauschbörse für Kryptowährungen. Mehr dazu auf meiner',
     projects: 'Projektseite',
     p3: 'Bei Interesse kannst Du mich erreichen unter',
   },
@@ -24,8 +24,13 @@ const Intro = () => {
   const { heading, p1, p2, projects, p3 } = introContent[lang]
 
   return (
-    <Flex justifyContent="center" mb="28">
-      <Box as="section" maxW="xl">
+    <Flex
+      as="section"
+      id="intro"
+      justifyContent="center"
+      mb={{ base: '12', md: '20' }}
+    >
+      <Box maxW="xl">
         <Heading textAlign="center">{heading}</Heading>
 
         <Flex mt="14">

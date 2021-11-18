@@ -27,7 +27,7 @@ const ContactPreview = () => {
   const { heading, p1 } = contactContent[lang]
 
   return (
-    <Box as="section" mb="16">
+    <Box as="section" id="contact" mb="16">
       <Heading as="h2" size="lg">
         {heading}
       </Heading>

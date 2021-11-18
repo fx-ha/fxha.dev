@@ -32,7 +32,7 @@ const ProjectSection = ({
   const { description, tasks } = projectSectionContent[lang]
 
   return (
-    <Box as="section" mb="20">
+    <Box as="section" id={title} mb="20">
       <Heading as="h2" size="md" mb="4" cursor="pointer">
         <Link title={`Visit ${title}`} isExternal href={url}>
           {title}

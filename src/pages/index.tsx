@@ -4,11 +4,14 @@ import {
   Layout,
   ProjectsPreview,
   Tech,
+  Testimonials,
 } from '../components'
 
 const Index = () => (
   <Layout title="Felix Ha">
     <Intro />
+
+    <Testimonials />
 
     <Tech />
 
