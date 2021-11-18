@@ -22,7 +22,7 @@ const Tech = () => {
   const { heading, p1, p2, p3 } = techContent[lang]
 
   return (
-    <Box as="section" mb="28">
+    <Box as="section" id="tech" mb="28">
       <Heading as="h2" mb="9" size="lg">
         {heading}
       </Heading>

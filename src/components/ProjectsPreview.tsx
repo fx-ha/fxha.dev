@@ -38,7 +38,7 @@ const ProjectsPreview = () => {
   const { heading, p11, p12, p2, button } = projectsContent[lang]
 
   return (
-    <Box as="section" mb="24">
+    <Box as="section" id="projects" mb="24">
       <Heading as="h2" size="lg">
         {heading}
       </Heading>
