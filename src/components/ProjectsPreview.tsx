@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import {
   Box,
   Button,
@@ -36,6 +36,8 @@ const ProjectsPreview = () => {
 
   const lang = useLang()
   const { heading, p11, p12, p2, button } = projectsContent[lang]
+
+  const router = useRouter()
 
   return (
     <Box as="section" id="projects" mb="24">
@@ -94,11 +96,7 @@ const ProjectsPreview = () => {
       </Flex>
 
       <Flex mt="6" justifyContent="center">
-        <NextLink href="/projects" passHref>
-          <Link _hover={{ textDecoration: 'none' }}>
-            <Button>{button}</Button>
-          </Link>
-        </NextLink>
+        <Button onClick={() => router.push('/projects')}>{button}</Button>
       </Flex>
     </Box>
   )
