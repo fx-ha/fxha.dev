@@ -88,7 +88,7 @@ const Testimonials = () => {
               <Flex
                 w={{ base: '90%', sm: 'md' }}
                 mx="auto"
-                p="8"
+                p={{ base: '3', sm: '8' }}
                 bg={isDark ? 'gray.700' : 'gray.50'}
                 shadow="lg"
                 rounded="md"
@@ -120,7 +120,7 @@ const Testimonials = () => {
 
                 <Spacer />
 
-                <Link isExternal href={slide.link} mb={{ base: '5', sm: '0' }}>
+                <Link isExternal href={slide.link} mb={{ base: '5', md: '0' }}>
                   <Box borderRadius="3xl" overflow="hidden" w="12" h="12">
                     <NextImage
                       src={slide.img}
