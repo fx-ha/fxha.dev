@@ -129,6 +129,7 @@ const Testimonials = () => {
                       layout="responsive"
                       alt={slide.author}
                       title={slide.author}
+                      priority
                     />
                   </Box>
                 </Link>
