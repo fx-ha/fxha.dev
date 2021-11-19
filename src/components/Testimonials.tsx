@@ -92,7 +92,7 @@ const Testimonials = () => {
                 bg={isDark ? 'gray.700' : 'gray.50'}
                 shadow="lg"
                 rounded="md"
-                direction={{ base: 'column-reverse', md: 'row' }}
+                direction={{ base: 'column-reverse', sm: 'row' }}
                 alignItems="center"
                 mt="3"
               >
@@ -100,9 +100,9 @@ const Testimonials = () => {
                   as={ImQuotesLeft}
                   aria-label="Quote"
                   boxSize="6"
-                  mt={{ md: '-28' }}
+                  mt="-28"
                   position="absolute"
-                  visibility={{ base: 'hidden', md: 'visible' }}
+                  visibility={{ base: 'hidden', sm: 'visible' }}
                 />
 
                 <Flex direction="column">
@@ -120,8 +120,13 @@ const Testimonials = () => {
 
                 <Spacer />
 
-                <Link isExternal href={slide.link} mb={{ base: '5', md: '0' }}>
-                  <Box borderRadius="3xl" overflow="hidden" w="12" h="12">
+                <Link isExternal href={slide.link} mb={{ base: '2', sm: '0' }}>
+                  <Box
+                    borderRadius="3xl"
+                    overflow="hidden"
+                    w={{ base: '9', sm: '12' }}
+                    h={{ base: '9', sm: '12' }}
+                  >
                     <NextImage
                       src={slide.img}
                       width={1}

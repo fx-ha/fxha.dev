@@ -28,7 +28,7 @@ const Intro = () => {
       as="section"
       id="intro"
       justifyContent="center"
-      mb={{ base: '12', md: '20' }}
+      mb={{ base: '12', sm: '20' }}
     >
       <Box maxW="xl">
         <Heading textAlign="center">{heading}</Heading>
