@@ -93,7 +93,8 @@ const Testimonials = () => {
                 w={{ base: '90%', sm: 'md' }}
                 mx="auto"
                 px={{ base: '3', sm: '8' }}
-                py={{ base: '5', sm: '8' }}
+                pt={{ base: '5', sm: '8' }}
+                pb={{ base: '5', sm: '7' }}
                 bg={isDark ? 'gray.700' : 'gray.50'}
                 shadow="lg"
                 rounded="md"
@@ -111,7 +112,7 @@ const Testimonials = () => {
                 />
 
                 <Flex direction="column">
-                  <Text mb={{ base: '1', sm: '2' }}>{slide.quote}</Text>
+                  <Text mb="1">{slide.quote}</Text>
 
                   <Text>
                     <Link
@@ -119,15 +120,12 @@ const Testimonials = () => {
                       href={slide.link}
                       title={`Visit ${slide.company}`}
                       _hover={{ textDecoration: 'none' }}
+                      fontSize="0.8rem"
                     >
-                      <Box as="span" fontSize="0.8rem" fontWeight="bold">
+                      <Box as="span" fontWeight="bold">
                         {slide.author}
                       </Box>
-                      <Box
-                        as="span"
-                        fontSize="0.8rem"
-                        color={isDark ? 'gray.400' : 'gray.500'}
-                      >
+                      <Box as="span" color={isDark ? 'gray.400' : 'gray.500'}>
                         {' - '}
                         {slide.company}
                       </Box>
