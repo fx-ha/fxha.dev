@@ -41,25 +41,29 @@ const Testimonials = () => {
   const slides = [
     {
       quote: sideshiftQuote,
-      author: 'SideShift.ai',
+      author: 'Blake',
+      company: 'SideShift.ai',
       img: '/images/sideshift.png',
       link: 'https://sideshift.ai/a/discount',
     },
     {
       quote: brandmarkerQuote,
-      author: 'Brandmarker',
+      author: 'Andreas',
+      company: 'Brandmarker',
       img: '/images/brandmarker.jpg',
       link: 'https://www.agentur-brandmarker.de/',
     },
     {
       quote: tacQuote,
-      author: 'Theater am Campus',
+      author: 'Donata',
+      company: 'Theater am Campus',
       img: '/images/tacLogo.png',
       link: 'https://www.theateramcampus.de/',
     },
     {
       quote: sztorcQuote,
-      author: 'Bitcoin Researcher',
+      author: 'Paul',
+      company: 'Bitcoin Researcher',
       img: '/images/twitter.png',
       link: 'https://twitter.com/Truthcoin/status/1368965437275389953',
     },
@@ -88,7 +92,9 @@ const Testimonials = () => {
               <Flex
                 w={{ base: '90%', sm: 'md' }}
                 mx="auto"
-                p={{ base: '3', sm: '8' }}
+                px={{ base: '3', sm: '8' }}
+                pt={{ base: '5', sm: '8' }}
+                pb={{ base: '5', sm: '7' }}
                 bg={isDark ? 'gray.700' : 'gray.50'}
                 shadow="lg"
                 rounded="md"
@@ -106,21 +112,30 @@ const Testimonials = () => {
                 />
 
                 <Flex direction="column">
-                  <Text mb="2">{slide.quote}</Text>
+                  <Text mb="1">{slide.quote}</Text>
 
-                  <Link
-                    isExternal
-                    href={slide.link}
-                    fontSize="0.8rem"
-                    fontWeight="bold"
-                  >
-                    {slide.author}
-                  </Link>
+                  <Text>
+                    <Link
+                      isExternal
+                      href={slide.link}
+                      title={`Visit ${slide.company}`}
+                      _hover={{ textDecoration: 'none' }}
+                      fontSize="0.8rem"
+                    >
+                      <Box as="span" fontWeight="bold">
+                        {slide.author}
+                      </Box>
+                      <Box as="span" color={isDark ? 'gray.400' : 'gray.500'}>
+                        {' - '}
+                        {slide.company}
+                      </Box>
+                    </Link>
+                  </Text>
                 </Flex>
 
                 <Spacer />
 
-                <Link isExternal href={slide.link} mb={{ base: '2', sm: '0' }}>
+                <Link isExternal href={slide.link} mb={{ base: '3', sm: '0' }}>
                   <Box
                     borderRadius="3xl"
                     overflow="hidden"
