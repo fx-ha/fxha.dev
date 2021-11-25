@@ -127,7 +127,7 @@ const Contact = () => {
                   variant="ghost"
                   isRound
                   icon={<FaTwitter size={25} />}
-                  aria-label="twitter"
+                  aria-label="felix on twitter"
                 />
               </Link>
 
