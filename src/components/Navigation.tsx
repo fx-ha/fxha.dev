@@ -10,6 +10,7 @@ import {
   Spacer,
   Text,
   useColorMode,
+  useColorModeValue,
 } from '@chakra-ui/react'
 import { SettingsIcon } from '@chakra-ui/icons'
 import { BiMoon, BiSun } from 'react-icons/bi'
@@ -32,8 +33,7 @@ const navigationContent = {
 }
 
 const Navigation = () => {
-  const { colorMode, toggleColorMode } = useColorMode()
-  const isDark = colorMode === 'dark'
+  const { toggleColorMode } = useColorMode()
 
   const router = useRouter()
   const { pathname, asPath, query, locale } = router
@@ -88,9 +88,15 @@ const Navigation = () => {
             />
           </MenuButton>
           <MenuList>
-            <MenuItem onClick={toggleLanguage}>{language}</MenuItem>
-            <MenuItem onClick={toggleColorMode}>
-              <Icon as={isDark ? BiSun : BiMoon} cursor="pointer" boxSize={5} />
+            <MenuItem onClick={toggleLanguage} title="change language">
+              {language}
+            </MenuItem>
+            <MenuItem onClick={toggleColorMode} title="change color mode">
+              <Icon
+                as={useColorModeValue(BiMoon, BiSun)}
+                cursor="pointer"
+                boxSize={5}
+              />
             </MenuItem>
           </MenuList>
         </Menu>
