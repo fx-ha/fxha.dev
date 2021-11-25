@@ -1,4 +1,4 @@
-import { Heading, useColorMode } from '@chakra-ui/react'
+import { Heading, useColorModeValue } from '@chakra-ui/react'
 import { Layout, ProjectSection } from '../components'
 import { useLang } from '../utils'
 
@@ -149,9 +149,6 @@ const projectsContent = {
 }
 
 const Projects = () => {
-  const { colorMode } = useColorMode()
-  const isDark = colorMode === 'dark'
-
   const lang = useLang()
   const {
     heading,
@@ -175,9 +172,10 @@ const Projects = () => {
       <ProjectSection
         title="SideShift.ai"
         url="https://sideshift.ai/a/discount"
-        imagePath={
-          isDark ? '/images/sideshift_dark.png' : '/images/sideshift_light.png'
-        }
+        imagePath={useColorModeValue(
+          '/images/sideshift_light.png',
+          '/images/sideshift_dark.png'
+        )}
         descriptionContent={sideshift.description}
         tasksContent={sideshift.tasks}
         tools="Typescript, React, PostgreSQL, GraphQL, Redis, Storybook, Jest"
@@ -222,7 +220,7 @@ const Projects = () => {
       <ProjectSection
         title="WhatTheFiatFee"
         url="https://whatthefiatfee.vercel.app"
-        imagePath={isDark ? '/images/wtff.png' : '/images/wtffL.png'}
+        imagePath={useColorModeValue('/images/wtffL.png', '/images/wtff.png')}
         descriptionContent={whatthefiatfee.description}
         tasksContent={whatthefiatfee.tasks}
         tools="Typescript, NodeJS, Express, Apollo, GraphQL, PostgreSQL, React, NextJS, Bitcoin, Chakra UI"
@@ -231,9 +229,10 @@ const Projects = () => {
       <ProjectSection
         title="Drivechain Exchange"
         url="https://drivechain.exchange"
-        imagePath={
-          isDark ? '/images/driveexchange.png' : '/images/driveexchangeL.png'
-        }
+        imagePath={useColorModeValue(
+          '/images/driveexchangeL.png',
+          '/images/driveexchange.png'
+        )}
         descriptionContent={drivechainexchange.description}
         tasksContent={drivechainexchange.tasks}
         tools="Typescript, NodeJS, Express, Apollo, GraphQL, PostgreSQL, React, Next.js, Bitcoin, Chakra UI"

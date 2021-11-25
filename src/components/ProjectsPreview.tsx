@@ -8,7 +8,7 @@ import {
   Link,
   Stack,
   Text,
-  useColorMode,
+  useColorModeValue,
   VStack,
 } from '@chakra-ui/react'
 import { useLang } from '../utils'
@@ -31,9 +31,6 @@ const projectsContent = {
 }
 
 const ProjectsPreview = () => {
-  const { colorMode } = useColorMode()
-  const isDark = colorMode === 'dark'
-
   const lang = useLang()
   const { heading, p11, p12, p2, button } = projectsContent[lang]
 
@@ -81,11 +78,10 @@ const ProjectsPreview = () => {
             <Link isExternal href="https://sideshift.ai/a/discount">
               <Image
                 title="Visit SideShift.ai"
-                src={
-                  isDark
-                    ? '/images/sideshift_dark.png'
-                    : '/images/sideshift_light.png'
-                }
+                src={useColorModeValue(
+                  '/images/sideshift_light.png',
+                  '/images/sideshift_dark.png'
+                )}
                 alt="image of sideshift.ai"
                 width={967}
                 height={856}
