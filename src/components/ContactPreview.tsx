@@ -38,7 +38,7 @@ const ContactPreview = () => {
 
       <Flex mt="5" alignItems="center" justifyContent="center">
         <HStack spacing={50}>
-          <Link href="mailto:felix@fxha.dev" isExternal>
+          <Link href="mailto:felix@fxha.dev" isExternal title="Email">
             <IconButton
               size="lg"
               icon={<BiMailSend size={35} />}
@@ -46,7 +46,7 @@ const ContactPreview = () => {
             />
           </Link>
 
-          <Link href="https://github.com/fx-ha" isExternal>
+          <Link href="https://github.com/fx-ha" isExternal title="Github">
             <IconButton
               size="lg"
               icon={<FaGithub size={30} />}
@@ -54,7 +54,7 @@ const ContactPreview = () => {
             />
           </Link>
 
-          <Link href="https://t.me/felixha" isExternal>
+          <Link href="https://t.me/felixha" isExternal title="Telegram">
             <IconButton
               size="lg"
               icon={<FaTelegramPlane size={30} />}

@@ -16,12 +16,48 @@ import { BsPerson } from 'react-icons/bs'
 import { MdEmail, MdLocationOn, MdOutlineEmail } from 'react-icons/md'
 import { FaGithub, FaTelegramPlane, FaTwitter } from 'react-icons/fa'
 import { InputField, Layout, TextareaField } from '../components'
+import { useLang } from '../utils'
+
+const contactContent = {
+  en: {
+    heading: 'Contact',
+    nameLabel: 'Your name',
+    emailLabel: 'Email',
+    messageLabel: 'Message',
+    successTitle: 'Message sent!',
+    errorTitle: 'Error!',
+    errorDescription: "Can't send message :(",
+    submitButton: 'Send Message',
+  },
+  de: {
+    heading: 'Kontakt',
+    nameLabel: 'Dein Name',
+    emailLabel: 'E-Mail',
+    messageLabel: 'Nachricht',
+    successTitle: 'Nachricht verschickt!',
+    errorTitle: 'Fehler!',
+    errorDescription: 'Nachricht kann nicht verschickt werden',
+    submitButton: 'Nachricht verschicken',
+  },
+}
 
 const Contact = () => {
   const toast = useToast()
 
+  const lang = useLang()
+  const {
+    heading,
+    emailLabel,
+    nameLabel,
+    messageLabel,
+    errorDescription,
+    errorTitle,
+    successTitle,
+    submitButton,
+  } = contactContent[lang]
+
   return (
-    <Layout title="Contact | Felix Ha">
+    <Layout title={`${heading} | Felix Ha"`}>
       <Flex
         justifyContent="center"
         alignItems="center"
@@ -34,7 +70,7 @@ const Contact = () => {
         >
           <Box>
             <Heading as="h1" srOnly size="lg">
-              Contact
+              {heading}
             </Heading>
 
             <Box>
@@ -43,6 +79,7 @@ const Contact = () => {
                   isExternal
                   href="mailto:felix@fxha.dev"
                   _hover={{ textDecoration: 'none' }}
+                  title="Email"
                 >
                   <Button
                     size="md"
@@ -59,6 +96,7 @@ const Contact = () => {
                   isExternal
                   href="https://www.google.com/maps/place/Foz+do+Douro/"
                   _hover={{ textDecoration: 'none' }}
+                  title="Map"
                 >
                   <Button
                     size="md"
@@ -79,17 +117,21 @@ const Contact = () => {
               px={5}
               alignItems="flex-start"
             >
-              <Link href="mailto:felix@fxha.dev" isExternal>
+              <Link
+                href="https://twitter.com/fx__ha"
+                isExternal
+                title="Twitter"
+              >
                 <IconButton
                   size="lg"
                   variant="ghost"
                   isRound
                   icon={<FaTwitter size={25} />}
-                  aria-label="felix on twitter"
+                  aria-label="twitter"
                 />
               </Link>
 
-              <Link href="https://github.com/fx-ha" isExternal>
+              <Link href="https://github.com/fx-ha" isExternal title="Github">
                 <IconButton
                   size="lg"
                   variant="ghost"
@@ -99,7 +141,7 @@ const Contact = () => {
                 />
               </Link>
 
-              <Link href="https://t.me/felixha" isExternal>
+              <Link href="https://t.me/felixha" isExternal title="Telegram">
                 <IconButton
                   size="lg"
                   variant="ghost"
@@ -138,15 +180,15 @@ const Contact = () => {
                     resetForm()
                     // const result = await response.json()
                     toast({
-                      title: 'Message sent!',
+                      title: successTitle,
                       status: 'success',
                       duration: 5000,
                       isClosable: true,
                     })
                   } else {
                     toast({
-                      title: 'Error!',
-                      description: "Can't send message :(",
+                      title: errorTitle,
+                      description: errorDescription,
                       status: 'error',
                       duration: 5000,
                       isClosable: true,
@@ -157,23 +199,23 @@ const Contact = () => {
                 {({ isSubmitting }) => (
                   <Form>
                     <VStack spacing={5}>
-                      <InputField label="Your Name" name="name" isRequired>
+                      <InputField label={nameLabel} name="name" isRequired>
                         <BsPerson color="gray.800" />
                       </InputField>
 
-                      <InputField label="Mail" name="email" isRequired>
+                      <InputField label={emailLabel} name="email" isRequired>
                         <MdOutlineEmail color="gray.800" />
                       </InputField>
 
                       <TextareaField
-                        label="Message"
+                        label={messageLabel}
                         name="message"
                         isRequired
                       />
 
                       <FormControl id="submit" float="right">
                         <Button type="submit" isLoading={isSubmitting}>
-                          Send Message
+                          {submitButton}
                         </Button>
                       </FormControl>
                     </VStack>
