@@ -203,7 +203,12 @@ const Contact = () => {
                         <BsPerson color="gray.800" />
                       </InputField>
 
-                      <InputField label={emailLabel} name="email" isRequired>
+                      <InputField
+                        label={emailLabel}
+                        name="email"
+                        type="email"
+                        isRequired
+                      >
                         <MdOutlineEmail color="gray.800" />
                       </InputField>
 
