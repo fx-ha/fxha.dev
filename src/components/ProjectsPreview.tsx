@@ -12,6 +12,8 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import { useLang } from '../utils'
+import sideShiftLightImg from '../../public/images/sideshift_light.png'
+import sideShiftDarkImg from '../../public/images/sideshift_dark.png'
 
 const projectsContent = {
   en: {
@@ -78,13 +80,11 @@ const ProjectsPreview = () => {
             <Link isExternal href="https://sideshift.ai/a/discount">
               <Image
                 title="Visit SideShift.ai"
-                src={useColorModeValue(
-                  '/images/sideshift_light.png',
-                  '/images/sideshift_dark.png'
-                )}
+                src={useColorModeValue(sideShiftLightImg, sideShiftDarkImg)}
                 alt="image of sideshift.ai"
                 width={967}
                 height={856}
+                placeholder="blur"
               />
             </Link>
           </Box>

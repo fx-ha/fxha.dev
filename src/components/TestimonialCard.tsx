@@ -1,4 +1,4 @@
-import NextImage from 'next/image'
+import Image from 'next/image'
 import {
   Box,
   Flex,
@@ -21,7 +21,7 @@ const TestimonalCard = ({
   link: string
   company: string
   author: string
-  img: string
+  img: string | StaticImageData
 }) => {
   return (
     <Box flex="none" boxSize="full">
@@ -78,7 +78,7 @@ const TestimonalCard = ({
             w={{ base: '9', sm: '12' }}
             h={{ base: '9', sm: '12' }}
           >
-            <NextImage
+            <Image
               src={img}
               width={1}
               height={1}

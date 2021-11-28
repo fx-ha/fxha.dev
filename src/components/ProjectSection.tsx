@@ -22,7 +22,7 @@ const ProjectSection = ({
   tools,
 }: {
   url: string
-  imagePath: string
+  imagePath: string | StaticImageData
   title: string
   descriptionContent: string
   tasksContent: string
@@ -71,6 +71,7 @@ const ProjectSection = ({
                 width={967}
                 height={856}
                 objectFit="cover"
+                placeholder="blur"
               />
             </Link>
           </Box>
