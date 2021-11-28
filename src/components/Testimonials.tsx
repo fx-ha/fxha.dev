@@ -2,6 +2,10 @@ import { useEffect, useState } from 'react'
 import { Flex } from '@chakra-ui/react'
 import { useLang } from '../utils'
 import { TestimonialCard } from '.'
+import sideshiftImg from '../../public/images/sideshift.png'
+import brandmarkerImg from '../../public/images/brandmarker.jpg'
+import tacImg from '../../public/images/tacLogo.png'
+import twitterImg from '../../public/images/twitter.png'
 
 const testimonialsContent = {
   en: {
@@ -31,28 +35,28 @@ const Testimonials = () => {
       quote: sideshiftQuote,
       author: 'Blake',
       company: 'SideShift.ai',
-      img: '/images/sideshift.png',
+      img: sideshiftImg,
       link: 'https://sideshift.ai/a/discount',
     },
     {
       quote: brandmarkerQuote,
       author: 'Andreas',
       company: 'Brandmarker',
-      img: '/images/brandmarker.jpg',
+      img: brandmarkerImg,
       link: 'https://www.agentur-brandmarker.de/',
     },
     {
       quote: tacQuote,
       author: 'Donata',
       company: 'Theater am Campus',
-      img: '/images/tacLogo.png',
+      img: tacImg,
       link: 'https://www.theateramcampus.de/',
     },
     {
       quote: sztorcQuote,
       author: 'Paul',
       company: 'Bitcoin Researcher',
-      img: '/images/twitter.png',
+      img: twitterImg,
       link: 'https://twitter.com/Truthcoin/status/1368965437275389953',
     },
   ]

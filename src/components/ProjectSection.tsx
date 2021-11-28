@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Box, Flex, Heading, Link, Stack, Text, VStack } from '@chakra-ui/react'
-import { shimmer, toBase64, useLang } from '../utils'
+import { useLang } from '../utils'
 
 const projectSectionContent = {
   en: {
@@ -22,7 +22,7 @@ const ProjectSection = ({
   tools,
 }: {
   url: string
-  imagePath: string
+  imagePath: string | StaticImageData
   title: string
   descriptionContent: string
   tasksContent: string
@@ -72,9 +72,6 @@ const ProjectSection = ({
                 height={856}
                 objectFit="cover"
                 placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                  shimmer(967, 856)
-                )}`}
               />
             </Link>
           </Box>

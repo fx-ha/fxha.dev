@@ -21,7 +21,7 @@ const TestimonalCard = ({
   link: string
   company: string
   author: string
-  img: string
+  img: string | StaticImageData
 }) => {
   return (
     <Box flex="none" boxSize="full">

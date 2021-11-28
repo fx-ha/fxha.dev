@@ -1,6 +1,17 @@
 import { Heading, useColorModeValue } from '@chakra-ui/react'
 import { Layout, ProjectSection } from '../components'
 import { useLang } from '../utils'
+import sideShiftLightImg from '../../public/images/sideshift_light.png'
+import sideShiftDarkImg from '../../public/images/sideshift_dark.png'
+import haroImg from '../../public/images/haro.png'
+import sunmarinImg from '../../public/images/sunmarin.png'
+import wegmannImg from '../../public/images/wegmann.png'
+import tacImg from '../../public/images/tac.png'
+import wtffLImg from '../../public/images/wtffL.png'
+import wtffImg from '../../public/images/wtff.png'
+import driveexchangeLImg from '../../public/images/driveexchangeL.png'
+import driveexchangeImg from '../../public/images/driveexchange.png'
+import wsbmentionsImg from '../../public/images/wsbmentions.png'
 
 const projectsContent = {
   en: {
@@ -172,10 +183,7 @@ const Projects = () => {
       <ProjectSection
         title="SideShift.ai"
         url="https://sideshift.ai/a/discount"
-        imagePath={useColorModeValue(
-          '/images/sideshift_light.png',
-          '/images/sideshift_dark.png'
-        )}
+        imagePath={useColorModeValue(sideShiftLightImg, sideShiftDarkImg)}
         descriptionContent={sideshift.description}
         tasksContent={sideshift.tasks}
         tools="Typescript, React, PostgreSQL, GraphQL, Redis, Storybook, Jest"
@@ -184,7 +192,7 @@ const Projects = () => {
       <ProjectSection
         title="Haro.com"
         url="https://haro.com"
-        imagePath="/images/haro.png"
+        imagePath={haroImg}
         descriptionContent={haro.description}
         tasksContent={haro.tasks}
         tools="PHP, Javascript, Laravel, Vue.js, MySQL, Redis, Bootstrap, SCSS"
@@ -193,7 +201,7 @@ const Projects = () => {
       <ProjectSection
         title="Sunmarin.de"
         url="https://sunmarin.de"
-        imagePath="/images/sunmarin.png"
+        imagePath={sunmarinImg}
         descriptionContent={sunmarin.description}
         tasksContent={sunmarin.tasks}
         tools="PHP, Javascript, HTML, SCSS, Bootstrap"
@@ -202,7 +210,7 @@ const Projects = () => {
       <ProjectSection
         title="Wegmann Automotive - Store Locator"
         url="https://www.wegmann-automotive.com/us/dealer/"
-        imagePath="/images/wegmann.png"
+        imagePath={wegmannImg}
         descriptionContent={wegmann.description}
         tasksContent={wegmann.tasks}
         tools="PHP, Javascript, Laravel, MySQL, Alpine.js, Bootstrap"
@@ -211,7 +219,7 @@ const Projects = () => {
       <ProjectSection
         title="Theater am Campus"
         url="https://theateramcampus.de"
-        imagePath="/images/tac.png"
+        imagePath={tacImg}
         descriptionContent={tac.description}
         tasksContent={tac.tasks}
         tools="Python, Django, Wagtail, PostgreSQL, React, Next.js, Bootstrap"
@@ -220,7 +228,7 @@ const Projects = () => {
       <ProjectSection
         title="WhatTheFiatFee"
         url="https://whatthefiatfee.vercel.app"
-        imagePath={useColorModeValue('/images/wtffL.png', '/images/wtff.png')}
+        imagePath={useColorModeValue(wtffLImg, wtffImg)}
         descriptionContent={whatthefiatfee.description}
         tasksContent={whatthefiatfee.tasks}
         tools="Typescript, NodeJS, Express, Apollo, GraphQL, PostgreSQL, React, NextJS, Bitcoin, Chakra UI"
@@ -229,10 +237,7 @@ const Projects = () => {
       <ProjectSection
         title="Drivechain Exchange"
         url="https://drivechain.exchange"
-        imagePath={useColorModeValue(
-          '/images/driveexchangeL.png',
-          '/images/driveexchange.png'
-        )}
+        imagePath={useColorModeValue(driveexchangeLImg, driveexchangeImg)}
         descriptionContent={drivechainexchange.description}
         tasksContent={drivechainexchange.tasks}
         tools="Typescript, NodeJS, Express, Apollo, GraphQL, PostgreSQL, React, Next.js, Bitcoin, Chakra UI"
@@ -241,7 +246,7 @@ const Projects = () => {
       <ProjectSection
         title="WallStreetBets Mentions"
         url="https://wsb-mentions.vercel.app/"
-        imagePath="/images/wsbmentions.png"
+        imagePath={wsbmentionsImg}
         descriptionContent={wsbmentions.description}
         tasksContent={wsbmentions.tasks}
         tools="Python, Pyppeteer, Tesseract OCR, React, Next.js, Recharts"
