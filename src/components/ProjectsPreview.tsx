@@ -11,7 +11,7 @@ import {
   useColorModeValue,
   VStack,
 } from '@chakra-ui/react'
-import { useLang } from '../utils'
+import { shimmer, toBase64, useLang } from '../utils'
 
 const projectsContent = {
   en: {
@@ -85,6 +85,10 @@ const ProjectsPreview = () => {
                 alt="image of sideshift.ai"
                 width={967}
                 height={856}
+                placeholder="blur"
+                blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                  shimmer(967, 856)
+                )}`}
               />
             </Link>
           </Box>
