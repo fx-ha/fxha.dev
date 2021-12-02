@@ -68,7 +68,7 @@ const projectsContent = {
     },
     fromabove: {
       description:
-        'Entry for the Global Gam Jam 2017, developed within 48 hours. A short game about holding your breath and keeping your sanity. In homage to Bloodborne and Ecco the Dolphin, players must strike a balance between surfacing for air but bearing witness to human chaos, and surviving underwater with limited air but in a serene landscape.',
+        'Entry for the Global Gam Jam 2017, developed within 48 hours. A short game about holding your breath and keeping your sanity. In homage to Bloodborne and Ecco the Dolphin, players must strike a balance between surfacing for air but witnessing the human chaos, and surviving underwater with limited oxygen but in a serene landscape.',
       tasks: 'Game design, programming',
     },
     siasocial: {
@@ -147,7 +147,7 @@ const projectsContent = {
     },
     fromabove: {
       description:
-        'Beitrag zum Global Gam Jam 2017, entwickelt in 48 Stunden. Eine kleine Hommage an Bloodborne und Ecco the Dolphin. Als Delphin müssen Spieler ein Äqui­li­b­ri­um finden: Unterwasser ist es friedlich, aber Sauerstoff ist knapp, doch zum Luftholen auftauchen und das menschliche Chaos zu betrachten, zehrt am Verstand.',
+        'Beitrag zum Global Gam Jam 2017, entwickelt in 48 Stunden. Eine kleine Hommage an Bloodborne und Ecco the Dolphin. Als Delphin müssen Spieler ein Äqui­li­b­ri­um finden: Unterwasser ist es friedlich, aber Sauerstoff ist knapp, doch zum Luftholen auftauchen und das menschliche Chaos zu sehen, zehrt am Verstand.',
       tasks: 'Spieldesign, Programmierung',
     },
     siasocial: {
