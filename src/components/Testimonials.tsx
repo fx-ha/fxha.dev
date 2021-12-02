@@ -6,6 +6,7 @@ import sideshiftImg from '../../public/images/sideshift.png'
 import brandmarkerImg from '../../public/images/brandmarker.jpg'
 import tacImg from '../../public/images/tacLogo.png'
 import twitterImg from '../../public/images/twitter.png'
+import rw11Img from '../../public/images/rw11.jpg'
 
 const testimonialsContent = {
   en: {
@@ -13,12 +14,14 @@ const testimonialsContent = {
     brandmarkerQuote: 'Excellent work with the store locator.',
     sztorcQuote: 'Great Bitcoin fee website.',
     sideshiftQuote: 'It was a pleasure working with you.',
+    rw11Quote: 'Looks really good on mobile!',
   },
   de: {
     tacQuote: 'Danke für die guten Erklärungen.',
     brandmarkerQuote: 'Klasse Arbeit beim Store-Locator.',
     sztorcQuote: 'Tolle Website über Bitcoin-Gebühren.',
     sideshiftQuote: 'Es war eine Freude mit Dir zu arbeiten.',
+    rw11Quote: 'Sieht am Handy richtig gut aus!',
   },
 }
 
@@ -26,7 +29,7 @@ const SLIDES_INTERVAL_TIME = 4000
 
 const Testimonials = () => {
   const lang = useLang()
-  const { brandmarkerQuote, sideshiftQuote, sztorcQuote, tacQuote } =
+  const { brandmarkerQuote, sideshiftQuote, sztorcQuote, tacQuote, rw11Quote } =
     testimonialsContent[lang]
   const [currentSlide, setCurrentSlide] = useState(0)
 
@@ -58,6 +61,13 @@ const Testimonials = () => {
       company: 'Bitcoin Researcher',
       img: twitterImg,
       link: 'https://twitter.com/Truthcoin/status/1368965437275389953',
+    },
+    {
+      quote: rw11Quote,
+      author: 'Daniel',
+      company: 'RW11',
+      img: rw11Img,
+      link: 'https://rw-11.herokuapp.com',
     },
   ]
 
