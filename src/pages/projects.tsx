@@ -13,6 +13,7 @@ import wtffImg from '../../public/images/wtff.png'
 import driveexchangeLImg from '../../public/images/driveexchangeL.png'
 import driveexchangeImg from '../../public/images/driveexchange.png'
 import wsbmentionsImg from '../../public/images/wsbmentions.png'
+import fromaboveImg from '../../public/images/from_above.png'
 
 const projectsContent = {
   en: {
@@ -64,6 +65,11 @@ const projectsContent = {
         'Converts the fee estimates from WhatTheFee.io to different currencies, adds a transaction size calculator and tracks historical data.',
       tasks:
         "full-stack development, deployment on Heroku (Backend) and Vercel's CDN (Frontend)",
+    },
+    fromabove: {
+      description:
+        'Entry for the Global Gam Jam 2017, developed within 48 hours. A short game about holding your breath and keeping your sanity. In homage to Bloodborne and Ecco the Dolphin, players must strike a balance between surfacing for air but bearing witness to human chaos, and surviving underwater with limited air but in a serene landscape.',
+      tasks: 'Game design, programming',
     },
     siasocial: {
       description: '...',
@@ -139,6 +145,11 @@ const projectsContent = {
       tasks:
         'full-stack development, Hosting mit Heroku (Backend) and Vercels CDN (Frontend)',
     },
+    fromabove: {
+      description:
+        'Beitrag zum Global Gam Jam 2017, entwickelt in 48 Stunden. Eine kleine Hommage an Bloodborne und Ecco the Dolphin. Als Delphin müssen Spieler ein Äqui­li­b­ri­um finden: Unterwasser ist es friedlich, aber Sauerstoff ist knapp, doch zum Luftholen auftauchen und das menschliche Chaos zu betrachten, zehrt am Verstand.',
+      tasks: 'Spieldesign, Programmierung',
+    },
     siasocial: {
       description: '...',
       tasks: '...',
@@ -177,6 +188,7 @@ const Projects = () => {
     whatthefiatfee,
     drivechainexchange,
     wsbmentions,
+    fromabove,
   } = projectsContent[lang]
 
   return (
@@ -264,6 +276,15 @@ const Projects = () => {
         descriptionContent={wsbmentions.description}
         tasksContent={wsbmentions.tasks}
         tools="Python, Pyppeteer, Tesseract OCR, React, Next.js, Recharts"
+      />
+
+      <ProjectSection
+        title="From Above"
+        url="https://globalgamejam.org/2017/games/above"
+        imagePath={fromaboveImg}
+        descriptionContent={fromabove.description}
+        tasksContent={fromabove.tasks}
+        tools="GameMaker Studio"
       />
     </Layout>
   )
