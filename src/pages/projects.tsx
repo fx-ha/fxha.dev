@@ -7,6 +7,7 @@ import haroImg from '../../public/images/haro.png'
 import sunmarinImg from '../../public/images/sunmarin.png'
 import wegmannImg from '../../public/images/wegmann.png'
 import tacImg from '../../public/images/tac.png'
+import rw11Img from '../../public/images/rw11.png'
 import wtffLImg from '../../public/images/wtffL.png'
 import wtffImg from '../../public/images/wtff.png'
 import driveexchangeLImg from '../../public/images/driveexchangeL.png'
@@ -47,20 +48,22 @@ const projectsContent = {
         'Communicating with client, minimizing hosting costs, UI and UX design, building a CMS for admins',
     },
     rw11: {
-      description: '...',
-      tasks: '...',
+      description:
+        'RW11 is a group of performance artists. The site includes an event schedule, contact form and infos about the team',
+      tasks:
+        'Communicating with client, minimizing hosting costs, adding a CMS, integrating Google Maps',
     },
     drivechainexchange: {
       description:
         'Hobby project to test new releases of Bitcoin beta software. It enables transfers between different blockchains (Exchange) and tracks blockchain data (CoinNews).',
       tasks:
-        "full-stack development, setting up bitcoin nodes, low-cost deployment on a VPS and Vercel's CDN (Frontend)",
+        "full-stack development, setting up bitcoin nodes, deployment on a VPS and Vercel's CDN (Frontend)",
     },
     whatthefiatfee: {
       description:
-        'Takes the fee estimation from the original WhatTheFee.io and converts it to different currencies as well as adding helpful calculators and tracking historical data.',
+        'Converts the fee estimates from WhatTheFee.io to different currencies, adds a transaction size calculator and tracks historical data.',
       tasks:
-        "full-stack development, free deployment on Heroku (Backend) and Vercel's CDN (Frontend)",
+        "full-stack development, deployment on Heroku (Backend) and Vercel's CDN (Frontend)",
     },
     siasocial: {
       description: '...',
@@ -75,7 +78,7 @@ const projectsContent = {
       description:
         'Analyzes the r/wallstreetbets subreddit with optical character recognition to track stock ticker mentions in images, memes and headlines.',
       tasks:
-        "full-stack development, free deployment on Heroku (Backend) and Vercel's CDN (Frontend)",
+        "full-stack development, deployment on Heroku (Backend) and Vercel's CDN (Frontend)",
     },
     leveld: {
       description: 'letterboxd inspired diary for videogames',
@@ -114,25 +117,27 @@ const projectsContent = {
     },
     tac: {
       description:
-        'Theater am Campus ist ein Studentenverein der Uni Bayreuth. Die Seite listet Projekte aller Theatergruppen, mit Veranstaltungskalendar und Funktionen zur Ticket-Reservierung.',
+        'Theater am Campus fasst Theaterprojekte der Uni Bayreuth zusammen. Mit Veranstaltungskalendar und Funktionen zur Ticket-Reservierung.',
       tasks:
         'Projektplanung mit streng limitiertem Budget, Hosting-Kosten minimieren, Full-stack-Entwicklung, CMS für Admins, automatischer Mailversand',
     },
     rw11: {
-      description: '...',
-      tasks: '...',
+      description:
+        'RW11 ist eine Theatergruppe aus Bayreuth. Die Seite listet Veranstaltungen, bietet ein Kontaktformular and informiert über das Team.',
+      tasks:
+        'Projektplanung mit streng limitiertem Budget, Hosting-Kosten minimieren, Full-stack-Entwicklung, CMS für Admins, Google-Maps-Integration',
     },
     drivechainexchange: {
       description:
         'Hobby-Projekt zum Betatesten von Bitcoin-Software. Ermöglicht den Transfer zwischen Blockchains (Exchange) und verfolgt Blockchain-Daten (CoinNews).',
       tasks:
-        'Full-stack-Entwicklung, Einrichten von Bitcoin-Nodes, kostengünstiges Hosten mit VPS und Vercels CDN (Frontend)',
+        'Full-stack-Entwicklung, Einrichten von Bitcoin-Nodes, Hosten mit VPS und Vercels CDN (Frontend)',
     },
     whatthefiatfee: {
       description:
-        'Nimmt die Gebühren-Prognosen von WhatTheFee.io und rechnet sie in verschiedene Währungen um, hilft bei der Berechnung von Transaktionsgrößen und visualisiert vergangene Transaktionsgebühren.',
+        'Rechnet die Gebühren-Prognosen von WhatTheFee.io in verschiedene Währungen um, hilft bei der Berechnung von Transaktionsgrößen und visualisiert vergangene Transaktionsgebühren.',
       tasks:
-        'full-stack development, kostenloses Hosting mit Heroku (Backend) and Vercels CDN (Frontend)',
+        'full-stack development, Hosting mit Heroku (Backend) and Vercels CDN (Frontend)',
     },
     siasocial: {
       description: '...',
@@ -146,7 +151,7 @@ const projectsContent = {
       description:
         'Analisiert das Subreddit r/wallstreetbets mithilfe von Optical Character Recognition, um Erwähnungen von Aktien in Bildern, Memes und Überschriften zu zählen und zu visualisieren.',
       tasks:
-        'full-stack development, kostenloses Hosting mit Heroku (Backend) and Vercels CDN (Frontend)',
+        'full-stack development, Hosting mit Heroku (Backend) and Vercels CDN (Frontend)',
     },
     leveld: {
       description: '...',
@@ -168,7 +173,7 @@ const Projects = () => {
     sunmarin,
     wegmann,
     tac,
-    // rw11,
+    rw11,
     whatthefiatfee,
     drivechainexchange,
     wsbmentions,
@@ -223,6 +228,15 @@ const Projects = () => {
         descriptionContent={tac.description}
         tasksContent={tac.tasks}
         tools="Python, Django, Wagtail, PostgreSQL, React, Next.js, Bootstrap"
+      />
+
+      <ProjectSection
+        title="RW11"
+        url="https://rw-11.herokuapp.com"
+        imagePath={rw11Img}
+        descriptionContent={rw11.description}
+        tasksContent={rw11.tasks}
+        tools="Python, Django, PostgreSQL, Javascript, Sass, Bootstrap"
       />
 
       <ProjectSection
