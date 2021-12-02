@@ -147,7 +147,7 @@ const projectsContent = {
     },
     fromabove: {
       description:
-        'Beitrag zum Global Gam Jam 2017, entwickelt in 48 Stunden. Eine kleine Hommage an Bloodborne und Ecco the Dolphin. Als Delphin müssen Spieler ein Äqui­li­b­ri­um finden: Unterwasser ist es friedlich, aber Sauerstoff ist knapp, doch zum Luftholen auftauchen und das menschliche Chaos zu sehen, zehrt am Verstand.',
+        'Beitrag zum Global Gam Jam 2017, entwickelt in 48 Stunden. Eine kleine Hommage an Bloodborne und Ecco the Dolphin. Als Delphin müssen Spieler ein Äqui­li­b­ri­um finden: Unterwasser ist es friedlich, aber Sauerstoff ist knapp, doch zum Luftholen auftauchen und das menschliche Chaos zu sehen, zehrt an den Nerven.',
       tasks: 'Spieldesign, Programmierung',
     },
     siasocial: {
