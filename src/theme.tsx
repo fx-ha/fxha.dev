@@ -26,10 +26,18 @@ const theme = extendTheme({
     global: (props: any) => ({
       html: {
         bg: mode('#fbfdfc', 'gray.800')(props),
+        bgGradient: mode(
+          'linear-gradient(to-b, #fbfdfc, #ebebeb)',
+          'linear-gradient(to-b, gray.800, gray.900)'
+        )(props),
       },
       body: {
         color: mode('gray.900', 'whiteAlpha.900')(props),
         bg: mode('#fbfdfc', 'gray.800')(props),
+        bgGradient: mode(
+          'linear-gradient(to-b, #fbfdfc, #ebebeb)',
+          'linear-gradient(to-b, gray.800, gray.900)'
+        )(props),
       },
     }),
   },

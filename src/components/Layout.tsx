@@ -31,9 +31,9 @@ const Layout = ({
       justifyContent="flex-start"
       minHeight="100vh"
     >
-      <Container maxW="3xl">
-        <Navigation />
-        <main>{children}</main>
+      <Navigation />
+      <Container as="main" maxW="3xl">
+        {children}
       </Container>
     </Flex>
   </>
