@@ -280,7 +280,7 @@ const Projects = () => {
 
       <ProjectSection
         title="From Above"
-        url="https://globalgamejam.org/2017/games/above"
+        url="http://from-above.monster"
         imagePath={fromaboveImg}
         descriptionContent={fromabove.description}
         tasksContent={fromabove.tasks}
