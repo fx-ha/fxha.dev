@@ -14,10 +14,17 @@ import driveexchangeLImg from '../../public/images/driveexchangeL.png'
 import driveexchangeImg from '../../public/images/driveexchange.png'
 import wsbmentionsImg from '../../public/images/wsbmentions.png'
 import fromaboveImg from '../../public/images/from_above.png'
+import datacakeImg from '../../public/images/datacake.png'
 
 const projectsContent = {
   en: {
     heading: 'Projects',
+    datacake: {
+      description:
+        'Datacake is a multi-purpose, low-code IoT platform that requires no programming skills and minimal time to create custom IoT applications',
+      tasks:
+        'Creating, improving and maintaining UI components, guiding overall development strategy through design, prototyping and market research',
+    },
     sideshift: {
       description:
         'SideShift.ai is a heavily automated exchange for digital currencies that serves as a bridge between different blockchains.',
@@ -97,6 +104,12 @@ const projectsContent = {
   },
   de: {
     heading: 'Projekte',
+    datacake: {
+      description:
+        'Datacake ist eine vielseitige Low-code-Plattform, mit der sich ohne Programmierkenntnisse und mit minimalem Zeitaufwand IoT-Anwendungen erstellen lassen.',
+      tasks:
+        'Erstellen, pflegen und verbessern der UI-Komponenten, leiten der Entwicklungs-Strategie durch Design, Prototyping und Marktforschung',
+    },
     sideshift: {
       description:
         'SideShift.ai ist eine stark automatisierte Tauschbörse für digitale Währungen, die als Brücke zwischen diversen Blockchains dient.',
@@ -189,6 +202,7 @@ const Projects = () => {
     drivechainexchange,
     wsbmentions,
     fromabove,
+    datacake,
   } = projectsContent[lang]
 
   return (
@@ -196,6 +210,15 @@ const Projects = () => {
       <Heading as="h1" size="lg" mb="10">
         {heading}
       </Heading>
+
+      <ProjectSection
+        title="Datacake.co"
+        url="https://datacake.co/"
+        imagePath={datacakeImg}
+        descriptionContent={datacake.description}
+        tasksContent={datacake.tasks}
+        tools="Typescript, React, GraphQL, Tailwind CSS, Storybook"
+      />
 
       <ProjectSection
         title="SideShift.ai"
