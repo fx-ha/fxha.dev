@@ -51,8 +51,17 @@ const Navigation = () => {
   const { projects, contact, blog, language } = navigationContent[lang]
 
   return (
-    <Box bg={useColorModeValue('#f5f6f6', '#191c27')} w="100vw" py="4" mb="14">
-      <Container maxW="3xl">
+    <>
+      <Box
+        bg={useColorModeValue('#f5f6f6', '#191c27')}
+        top="0"
+        left="-10px"
+        width="calc(100% + 10px)"
+        height="4rem"
+        position="absolute"
+        zIndex="0"
+      ></Box>
+      <Container maxW="3xl" pt="4" mb="14" zIndex="1">
         <Flex as="nav" alignItems="center" justifyContent="center">
           <Icon
             cursor="pointer"
@@ -107,7 +116,7 @@ const Navigation = () => {
           </HStack>
         </Flex>
       </Container>
-    </Box>
+    </>
   )
 }
 
