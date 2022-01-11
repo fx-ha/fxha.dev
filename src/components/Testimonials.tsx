@@ -7,6 +7,7 @@ import brandmarkerImg from '../../public/images/brandmarker.jpg'
 import tacImg from '../../public/images/tacLogo.png'
 import twitterImg from '../../public/images/twitter.png'
 import rw11Img from '../../public/images/rw11.jpg'
+import datacakeImg from '../../public/images/datacakelogo.png'
 
 const testimonialsContent = {
   en: {
@@ -15,6 +16,7 @@ const testimonialsContent = {
     sztorcQuote: 'Great Bitcoin fee website.',
     sideshiftQuote: 'It was a pleasure working with you.',
     rw11Quote: 'Looks really good on mobile!',
+    datacakeQuote: 'Mega!',
   },
   de: {
     tacQuote: 'Danke für die guten Erklärungen.',
@@ -22,18 +24,32 @@ const testimonialsContent = {
     sztorcQuote: 'Tolle Website über Bitcoin-Gebühren.',
     sideshiftQuote: 'Es war eine Freude mit Dir zu arbeiten.',
     rw11Quote: 'Sieht am Handy richtig gut aus!',
+    datacakeQuote: 'Mega!',
   },
 }
 
-const SLIDES_INTERVAL_TIME = 4000
+const SLIDES_INTERVAL_TIME = 3500
 
 const Testimonials = () => {
   const lang = useLang()
-  const { brandmarkerQuote, sideshiftQuote, sztorcQuote, tacQuote, rw11Quote } =
-    testimonialsContent[lang]
+  const {
+    brandmarkerQuote,
+    sideshiftQuote,
+    sztorcQuote,
+    tacQuote,
+    rw11Quote,
+    datacakeQuote,
+  } = testimonialsContent[lang]
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const slides = [
+    {
+      quote: datacakeQuote,
+      author: 'Simon',
+      company: 'Datacake.co',
+      img: datacakeImg,
+      link: 'https://datacake.co',
+    },
     {
       quote: sideshiftQuote,
       author: 'Blake',
