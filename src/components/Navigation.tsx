@@ -61,7 +61,7 @@ const Navigation = () => {
         position="absolute"
         zIndex="0"
       ></Box>
-      <Container maxW="3xl" pt="4" mb="14" zIndex="1">
+      <Container maxW="3xl" pt="4" mb={{ base: '12', sm: '20' }} zIndex="1">
         <Flex as="nav" alignItems="center" justifyContent="center">
           <Icon
             cursor="pointer"
