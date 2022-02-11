@@ -16,6 +16,8 @@ import wsbmentionsImg from '../../public/images/wsbmentions.png'
 import fromaboveImg from '../../public/images/from_above.png'
 import datacakeImg from '../../public/images/datacake.png'
 
+// TODO add Jiga: improves supply chain (=Lieferketten) automation
+
 const projectsContent = {
   en: {
     heading: 'Projects',
