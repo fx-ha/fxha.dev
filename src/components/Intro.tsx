@@ -32,7 +32,7 @@ const Intro = () => {
       <Box maxW="xl">
         <Heading textAlign="center">{heading}</Heading>
 
-        <Flex mt={{ base: '6', sm: '14' }}>
+        <Flex mt={{ base: '6', sm: '10' }}>
           <VStack align="left" spacing={5}>
             <Text textAlign="justify">{p1}</Text>
 
